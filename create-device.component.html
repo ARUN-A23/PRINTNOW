@@ -1,0 +1,56 @@
+
+    <div class="col-md-6 offset-md-3">
+        <h3> PRINT FORM</h3>
+        <form (ngSubmit) = "onSubmit()">
+        
+            <div class="form-group">
+                <label> Name</label>
+                <input type="text" class ="form-control" id = "Device_Type"
+                    [(ngModel)] = "product.name" name = "Device_Type">
+            </div>
+        
+            <div class="form-group">
+                <label> Email</label>
+                <input type="text" class="form-control" id="Device_Brand"
+                  [(ngModel)]="product.email" name="Device_Brand">
+            </div>
+        
+            
+              <div class="form-group">
+                        <label for="Print">Print:</label>
+                        <select class="form-control" id="Print" name="Print" [(ngModel)]="product['print']" >
+                          <option value="" disabled>Select a Print</option>
+                          <option value="A3">A3</option>
+                          <option value="A4">A4</option>
+                          <option value="A5">A5</option>
+                        </select>
+                        </div> 
+                     <div class="form-group">
+                    <label for="Color">Color:</label>
+                    <select class="form-control" id="Color" name="Color" [(ngModel)]="product['color']" >
+                      <option value="" disabled>Select a Binding</option>
+                      <option value="Black And White">Black And White</option>
+                      <option value="color">color</option>
+                     
+                    </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="Binding">Bindings:</label>
+                        <select class="form-control" id="Binding" name="Binding" [(ngModel)]="product['binding']" >
+                          <option value="" disabled>Select a Binding</option>
+                          <option value="Spiral">Spiral</option>
+                          <option value="Soft Binding">Soft Binding</option>
+                          <option value="No Binding">No Binding</option>
+                        </select>
+                        </div>
+            <div class="form-group">
+                <label> Phone</label>
+                <input type="text" class ="form-control" id = "Device_Model"
+                    [(ngModel)] = "product.phone" name = "Device_Model">
+            </div>
+        
+            <button class = "btn btn-success" type ="submit" >Submit</button>
+        
+        </form>
+        </div> 

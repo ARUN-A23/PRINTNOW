@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <title>Print Form</title>
+
+  <link rel="icon" type="image/x-icon" href="C:\Users\anand\Desktop\print.co\cropped-favicon.png">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body style="font-size: 20px;">
+  <div class="container">
+   
+    <h1 style="background-color:DodgerBlue;">Print Form</h1>
+    <style>
+      body {
+        background-image: url('C:\\Users\\anand\\Desktop\\print.co\\bg-1-full.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+    </style>
+    <form>
+      <div class="form-box">
+        <div class="label">Name</div>
+        <input type="text" name="name" required>
+
+        
+
+        <div class="label">Email</div>
+        <input type="text" name="email" required>
+
+        <div class="label">Print</div>
+        <select name="print">
+          <option value="a4">A4</option>
+          <option value="a3">A3</option>
+          <option value="a5">A5</option>
+          <option value="photo sheet">Photo Sheet</option>
+        </select>
+
+        <div class="label">Color</div>
+        <select name="color">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <div class="label">Binding</div>
+        <select name="binding">
+          <option value="Spiral">Spiral</option>
+          <option value="Soft Binding">Soft Binding</option>
+          <option value="No binding">No Binding</option>
+        </select>
+
+        <div class="label">Phone Number</div>
+        <input type="text" name="phone_number" required>
+
+        <div class="label">Upload File </div>
+        <input type="file" name="file" accept=".pdf, .doc, .docx">
+
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
